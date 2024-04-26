@@ -1,5 +1,10 @@
 package com.github.levoskaa;
 
+import com.github.levoskaa.displays.CurrentConditionsDisplay;
+import com.github.levoskaa.displays.ForecastDisplay;
+import com.github.levoskaa.displays.HeatIndexDisplay;
+import com.github.levoskaa.displays.StatisticsDisplay;
+
 public class WeatherStation {
 
     public static void main(String[] args) {

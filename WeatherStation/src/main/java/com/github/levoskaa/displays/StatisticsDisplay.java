@@ -1,4 +1,7 @@
-package com.github.levoskaa;
+package com.github.levoskaa.displays;
+
+import com.github.levoskaa.Observer;
+import com.github.levoskaa.WeatherData;
 
 public class StatisticsDisplay implements Observer, DisplayElement {
 
@@ -14,11 +17,12 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     }
 
     @Override
-    public void update(float temperature, float humidity, float pressure) {
-        tempSum += temperature;
+    public void update() {
+        var newTemp = weatherData.getTemperature();
+        tempSum += newTemp;
         numReadings++;
-        maxTemp = Math.max(maxTemp, temperature);
-        minTemp = Math.min(minTemp, temperature);
+        maxTemp = Math.max(maxTemp, newTemp);
+        minTemp = Math.min(minTemp, newTemp);
         display();
     }
 

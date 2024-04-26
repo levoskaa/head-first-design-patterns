@@ -1,4 +1,9 @@
-package com.github.levoskaa;
+package com.github.levoskaa.displays;
+
+import com.github.levoskaa.Observer;
+import com.github.levoskaa.WeatherData;
+
+import lombok.Getter;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
@@ -12,9 +17,9 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
     }
 
     @Override
-    public void update(float temperature, float humidity, float pressure) {
-        this.temperature = temperature;
-        this.humidity = humidity;
+    public void update() {
+        this.temperature = weatherData.getTemperature();
+        this.humidity = weatherData.getHumidity();
         display();
     }
 

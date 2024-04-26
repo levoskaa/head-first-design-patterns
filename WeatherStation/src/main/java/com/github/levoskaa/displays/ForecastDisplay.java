@@ -1,4 +1,7 @@
-package com.github.levoskaa;
+package com.github.levoskaa.displays;
+
+import com.github.levoskaa.Observer;
+import com.github.levoskaa.WeatherData;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 
@@ -12,9 +15,9 @@ public class ForecastDisplay implements Observer, DisplayElement {
     }
 
     @Override
-    public void update(float temperature, float humidity, float pressure) {
+    public void update() {
         lastPressure = currentPressure;
-        currentPressure = pressure;
+        currentPressure = weatherData.getPressure();
         display();
     }
 

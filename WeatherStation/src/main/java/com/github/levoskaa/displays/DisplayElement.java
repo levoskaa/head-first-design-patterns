@@ -1,4 +1,4 @@
-package com.github.levoskaa;
+package com.github.levoskaa.displays;
 
 public interface DisplayElement {
 
