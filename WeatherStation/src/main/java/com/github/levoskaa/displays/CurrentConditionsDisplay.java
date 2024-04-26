@@ -3,8 +3,6 @@ package com.github.levoskaa.displays;
 import com.github.levoskaa.Observer;
 import com.github.levoskaa.WeatherData;
 
-import lombok.Getter;
-
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
     private float temperature;
