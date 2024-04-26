@@ -4,7 +4,7 @@ import com.github.levoskaa.starbuzz.beverages.Beverage;
 
 public abstract class CondimentDecorator extends Beverage {
     
-    private Beverage beverage;
+    protected Beverage beverage;
 
     @Override
     public abstract String getDescription();
