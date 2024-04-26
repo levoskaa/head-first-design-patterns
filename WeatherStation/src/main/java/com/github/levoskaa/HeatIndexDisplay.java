@@ -29,6 +29,6 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
 
     @Override
     public void display() {
-        System.out.printf("Heat index is: %f%n", heatIndex);
+        System.out.printf("Heat index is: %.5f%n", heatIndex);
     }
 }
