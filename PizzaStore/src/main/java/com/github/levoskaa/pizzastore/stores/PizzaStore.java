@@ -1,5 +1,7 @@
 package com.github.levoskaa.pizzastore.stores;
 
+import com.github.levoskaa.pizzastore.pizzas.Pizza;
+
 public abstract class PizzaStore {
 
     public Pizza orderPizza(String type) {

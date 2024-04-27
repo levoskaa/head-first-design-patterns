@@ -1,5 +1,11 @@
 package com.github.levoskaa.pizzastore.stores;
 
+import com.github.levoskaa.pizzastore.pizzas.ChicagoStyleCheesePizza;
+import com.github.levoskaa.pizzastore.pizzas.ChicagoStyleClamPizza;
+import com.github.levoskaa.pizzastore.pizzas.ChicagoStylePepperoniPizza;
+import com.github.levoskaa.pizzastore.pizzas.ChicagoStyleVeggiePizza;
+import com.github.levoskaa.pizzastore.pizzas.Pizza;
+
 public class ChicagePizzaStore extends PizzaStore {
 
     @Override
